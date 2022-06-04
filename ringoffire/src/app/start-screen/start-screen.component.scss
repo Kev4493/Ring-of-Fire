@@ -1,0 +1,46 @@
+.start-screen {
+    background-color: #404040;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        object-fit: cover;
+        height: 100vh;
+        width: 100vw;
+    }
+}
+
+.headline {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+
+    h1 {
+        font-size: 3rem;
+        color: whitesmoke;
+    }
+}
+
+.start-label-box {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    display: flex;
+    justify-content: center;
+
+    p {
+        padding: 1rem;
+        background-color: whitesmoke;
+        font-size: 2rem;
+        border-radius: 12px;
+    }
+
+}
