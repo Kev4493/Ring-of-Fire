@@ -17,6 +17,8 @@ export class Game {
 }
 
 
+
+// Funktion zum durchmischen aus Stackoverflow:
 function shuffle(array) {
     let currentIndex = array.length,  randomIndex;
   
