@@ -90,3 +90,21 @@
         margin-left: 8px;
     } 
 }
+
+app-player, app-player-mobile {
+    cursor: pointer;
+
+    &:hover {
+        filter: brightness(1.1)
+    }
+}
+
+.gameOver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 300px;
+    }
+}
