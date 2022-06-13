@@ -61,6 +61,7 @@ export class GameComponent implements OnInit {
       console.log('Game is', this.game);
       this.game.currentPlayer++;
       this.game.currentPlayer = this.game.currentPlayer % this.game.players.length;
+
       this.saveGame();
 
       setTimeout(() => {
@@ -70,6 +71,7 @@ export class GameComponent implements OnInit {
       }, 1000);
     }
   }
+
 
   editPlayer(playerId: number) {
     console.log('Edit player', playerId);
