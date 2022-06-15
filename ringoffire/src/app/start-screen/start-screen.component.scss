@@ -17,6 +17,7 @@
         url('../../assets/fonts/indie-flower-v17-latin-regular.svg#IndieFlower') format('svg');
     /* Legacy iOS */
 }
+
 .start-screen {
     display: flex;
     justify-content: center;
@@ -50,6 +51,14 @@
             text-transform: uppercase;
             text-shadow: 2px 2px 8px #000000;
             letter-spacing: 10px;
+
+            @media (max-width: 752px) {
+                font-size: 3rem;
+            }
+
+            @media (max-width: 430px) {
+                font-size: 2.5rem;
+            }
          }
 
          p {
@@ -58,22 +67,54 @@
             color: whitesmoke;
             margin-top: 1.5rem;
             text-shadow: 2px 2px 8px #000000;
+
+            @media (max-width: 752px) {
+                font-size: 1rem;
+            }
+
+            @media (max-width: 430px) {
+                margin-top: 1rem;
+            }
          }
     }
 
     .button-section {
         margin-top: 6rem;
 
+        @media (max-width: 430px) {
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 430px) {
+            display: flex;
+            flex-direction: column;
+        }
+
         button {
             width: 280px;
             height: 50px;
-            margin: 0rem 3rem;
             background-color: #1f1f1f;
             color: #dbdbdb;
             font-family: 'Indie Flower';
             font-size: 1.3rem;
             border: 1px solid #dbdbdb;
             text-transform: uppercase;
+            margin: 0rem 3rem;
+
+            @media (max-width: 752px) {
+                width: 180px;
+                height: 50px;
+                font-size: 1rem;
+            }
+
+            @media (max-width: 552px) {
+                margin: 0rem 1rem;
+            }
+
+            @media (max-width: 430px) {
+                margin: 1rem 1rem;
+            }
+
 
             &:hover {
                 background-color: #0b0b0b;
@@ -81,12 +122,9 @@
                 border: 2px solid whitesmoke;
                 color: whitesmoke;
             }
-
-            
-
-
         }
 
 
     }
 }
+
