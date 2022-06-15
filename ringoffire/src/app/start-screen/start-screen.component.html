@@ -1,11 +1,16 @@
 <div class="start-screen">
-    <img src="assets/img/startscreen.jpg" alt="">
 
-    <div class="headline">
+    <div class="dimm-container"></div>
+
+    <div class="content">
         <h1>Ring of Fire</h1>
+        <p>The most famous drinking game of all time</p>
+
+        <div class="button-section">
+            <button (click)="newGame()">Start a new Game</button>
+            <button>show me how to play</button>
+        </div>
+
     </div>
 
-    <div class="start-label-box">
-        <p (click)="newGame()">Start Game</p>
-    </div>
 </div>
