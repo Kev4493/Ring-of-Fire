@@ -51,7 +51,10 @@ export class GameComponent implements OnInit {
 
 
   takeCard() {
-    if(this.game.stack.length == 0) {
+    if (this.game.players.length < 1) {
+      alert('Bitte fügen Sie mindestens einen Spieler hinzu um das Spiel zu beginnen');
+      this.openDialog();
+    } else if (this.game.stack.length == 0) {
       this.gameOver = true;
     } else if (!this.game.pickCardAnimation) {
       this.game.currentCard = this.game.stack.pop();
