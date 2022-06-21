@@ -8,9 +8,28 @@
 
         <div class="button-section">
             <button (click)="newGame()">Start a new Game</button>
-            <button>show me how to play</button>
+            <button (click)="openDialog()">show me how to play</button>
         </div>
+    </div>
 
+    <div id="rules-dialog" class="rules-dialog d-none">
+
+        <div class="rules-text-container">
+            <div class="icon-container">
+                <img (click)="closeDialog()" class="close-icon" src="../../assets/img/close_icon.svg" alt="">
+            </div>
+            <p>
+                In this slightly modified online version of "Ring of Fire", 
+                the idea is that each player in turn draws a card and must complete a certain task depending on the symbol.
+                <br>
+                The white box at the bottom always shows exactly what each player has to do.
+                <br> 
+                Prepare for a very fun (and probably very drunk) evening.
+                <br>
+                <br>
+                Please drink responsibly!!
+            </p>
+        </div>
     </div>
 
 </div>

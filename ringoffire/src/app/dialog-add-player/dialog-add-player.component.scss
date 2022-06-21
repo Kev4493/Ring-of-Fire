@@ -1,0 +1,19 @@
+
+.share-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    background-color: lightgray;
+    border-radius: 12px;
+
+    p {
+        font-weight: 700;
+    }
+
+    .share-icon {
+        width: 25px;
+        margin-bottom: 1rem;
+    }
+
+}

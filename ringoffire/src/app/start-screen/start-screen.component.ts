@@ -31,4 +31,14 @@ export class StartScreenComponent implements OnInit {
       });
   }
 
+  openDialog() {
+    let dialog = document.getElementById('rules-dialog');
+    dialog.classList.remove('d-none');
+  }
+
+  closeDialog() {
+    let dialog = document.getElementById('rules-dialog');
+    dialog.classList.add('d-none');
+  }
+
 }

@@ -43,8 +43,8 @@
         flex-direction: column;
         align-items: center;
         z-index: 99;
-        
-         h1 {
+
+        h1 {
             font-family: 'Indie Flower';
             font-size: 6rem;
             color: whitesmoke;
@@ -59,9 +59,9 @@
             @media (max-width: 430px) {
                 font-size: 2.5rem;
             }
-         }
+        }
 
-         p {
+        p {
             font-family: 'Indie Flower';
             font-size: 1.3rem;
             color: whitesmoke;
@@ -75,7 +75,7 @@
             @media (max-width: 430px) {
                 margin-top: 1rem;
             }
-         }
+        }
     }
 
     .button-section {
@@ -123,8 +123,63 @@
                 color: whitesmoke;
             }
         }
+    }
+    .d-none {
+        display: none !important;
+    }
 
+    .rules-dialog {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-image: url('../../assets/img/pexels-pixabay-279009.jpg');
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 99;
+    }
 
+    .rules-text-container {
+        // background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(31, 31, 31, 0.9);
+        max-width: 900px;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        color: #dbdbdb;
+        font-family: "Indie Flower";
+        font-size: 1.5rem;
+        line-height: 3rem;
+        border: 1px solid #dbdbdb;
+        position: relative;
+        margin: 0rem 2rem;
+
+        @media (max-width: 414px) {
+            max-height: 600px;
+            font-size: 1rem;
+        }
+
+        @media (max-width: 375px) {
+            max-height: 450px;
+            font-size: 1rem;
+            line-height: 2rem
+        }
+    }
+
+    .icon-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -65px;
+        right: -25px;
+        border-radius: 50%;
+    }
+
+    .close-icon {
+        cursor: pointer;
     }
 }
-
